@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D79E86949FD2DFC24145539 /* Pods_HackDuke_SymMom2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9E4CB3DCEF1A16CEECF03 /* Pods_HackDuke_SymMom2.framework */; };
 		3184F943257C0821005E73B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184F942257C0821005E73B8 /* AppDelegate.swift */; };
 		3184F945257C0821005E73B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184F944257C0821005E73B8 /* SceneDelegate.swift */; };
 		3184F947257C0821005E73B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184F946257C0821005E73B8 /* ViewController.swift */; };
@@ -26,6 +27,9 @@
 		3184F94E257C0823005E73B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3184F950257C0823005E73B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C32726257C0F26009FCEAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E6783DEC0379548956274D1 /* Pods-HackDuke_SymMom2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.debug.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.debug.xcconfig"; sourceTree = "<group>"; };
+		92A9E4CB3DCEF1A16CEECF03 /* Pods_HackDuke_SymMom2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke_SymMom2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D64D9D39B68314811E6E47 /* Pods-HackDuke_SymMom2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.release.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D79E86949FD2DFC24145539 /* Pods_HackDuke_SymMom2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				3184F941257C0821005E73B8 /* HackDuke_SymMom2 */,
 				3184F940257C0821005E73B8 /* Products */,
+				D49D019701DA0C79B26F0A88 /* Pods */,
+				443BFA1752BBC5E46E647B69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = HackDuke_SymMom2;
 			sourceTree = "<group>";
 		};
+		443BFA1752BBC5E46E647B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A9E4CB3DCEF1A16CEECF03 /* Pods_HackDuke_SymMom2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D49D019701DA0C79B26F0A88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E6783DEC0379548956274D1 /* Pods-HackDuke_SymMom2.debug.xcconfig */,
+				E1D64D9D39B68314811E6E47 /* Pods-HackDuke_SymMom2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3184F953257C0823005E73B8 /* Build configuration list for PBXNativeTarget "HackDuke_SymMom2" */;
 			buildPhases = (
+				B7E3C9B016A16DF565CF8C71 /* [CP] Check Pods Manifest.lock */,
 				3184F93B257C0821005E73B8 /* Sources */,
 				3184F93C257C0821005E73B8 /* Frameworks */,
 				3184F93D257C0821005E73B8 /* Resources */,
+				D8739742EC877A3BF0EEC89E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7E3C9B016A16DF565CF8C71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackDuke_SymMom2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8739742EC877A3BF0EEC89E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3184F93B257C0821005E73B8 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		3184F954257C0823005E73B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6783DEC0379548956274D1 /* Pods-HackDuke_SymMom2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		3184F955257C0823005E73B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D64D9D39B68314811E6E47 /* Pods-HackDuke_SymMom2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
