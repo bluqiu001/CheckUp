@@ -15,11 +15,12 @@ class LoginVC: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    var isDoctor:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print(isDoctor)
     }
 
     @IBAction func loginAction(_ sender: Any) {
