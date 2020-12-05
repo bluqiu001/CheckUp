@@ -19,6 +19,46 @@ class DoctorLoginVC: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func regAction(_ sender: Any) {
+        let alert = UIAlertController(title: "Register",
+                                      message: "Register",
+                                      preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
+            // 1
+            let emailField = alert.textFields![0]
+            let passwordField = alert.textFields![1]
+
+            // 2
+            Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { user, error in
+              if error == nil {
+                // 3
+                Auth.auth().signIn(withEmail: self.username.text!,
+                                   password: self.password.text!)
+              }
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .cancel)
+        
+        alert.addTextField { textEmail in
+          textEmail.placeholder = "Enter your email"
+        }
+        
+        alert.addTextField { textPassword in
+          textPassword.isSecureTextEntry = true
+          textPassword.placeholder = "Enter your password"
+        }
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+        
+        
+        
+    }
     @IBAction func loginAction(_ sender: Any) {
         
         print(username.text!)
