@@ -13,6 +13,7 @@
 		3184F94A257C0821005E73B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3184F948257C0821005E73B8 /* Main.storyboard */; };
 		3184F94C257C0823005E73B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94B257C0823005E73B8 /* Assets.xcassets */; };
 		3184F94F257C0823005E73B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94D257C0823005E73B8 /* LaunchScreen.storyboard */; };
+		31C32727257C0F26009FCEAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C32726257C0F26009FCEAB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3184F94B257C0823005E73B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3184F94E257C0823005E73B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3184F950257C0823005E73B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31C32726257C0F26009FCEAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3184F941257C0821005E73B8 /* HackDuke_SymMom2 */ = {
 			isa = PBXGroup;
 			children = (
+				31C32726257C0F26009FCEAB /* GoogleService-Info.plist */,
 				3184F942257C0821005E73B8 /* AppDelegate.swift */,
 				3184F944257C0821005E73B8 /* SceneDelegate.swift */,
 				3184F946257C0821005E73B8 /* ViewController.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3184F94F257C0823005E73B8 /* LaunchScreen.storyboard in Resources */,
+				31C32727257C0F26009FCEAB /* GoogleService-Info.plist in Resources */,
 				3184F94C257C0823005E73B8 /* Assets.xcassets in Resources */,
 				3184F94A257C0821005E73B8 /* Main.storyboard in Resources */,
 			);
