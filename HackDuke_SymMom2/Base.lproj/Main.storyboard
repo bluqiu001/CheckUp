@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="-185"/>
+            <point key="canvasLocation" x="367" y="-402"/>
         </scene>
         <!--Patient MenuVC-->
         <scene sceneID="Qkm-bn-Rht">
@@ -101,20 +101,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="O7s-kR-xXJ">
                                 <rect key="frame" x="0.0" y="200" width="414" height="408"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlQ-yf-AQn">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="69.5"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <state key="normal" title="Log Symptoms"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AV2-an-czX">
-                                        <rect key="frame" x="0.0" y="169.5" width="414" height="69"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="408"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
-                                        <state key="normal" title="Reminders"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glP-m5-VuA">
-                                        <rect key="frame" x="0.0" y="338.5" width="414" height="69.5"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Settings"/>
+                                        <state key="normal" title="Record Symptoms"/>
+                                        <connections>
+                                            <segue destination="Wl2-p1-YxP" kind="presentation" id="oEa-qq-OBB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -135,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fP4-mC-sCa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="-197"/>
+            <point key="canvasLocation" x="1449" y="-402"/>
         </scene>
         <!--Pat DocVC-->
         <scene sceneID="c3u-0j-Vvd">
@@ -188,20 +181,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Utb-gQ-cyC">
                                 <rect key="frame" x="0.0" y="200" width="414" height="408"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI4-oZ-FDz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="69.5"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <state key="normal" title="Log Symptoms"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOy-KC-N1o">
-                                        <rect key="frame" x="0.0" y="169.5" width="414" height="69"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
-                                        <state key="normal" title="Reminders"/>
+                                        <state key="normal" title="Schedule Appointment"/>
+                                        <connections>
+                                            <segue destination="MMQ-s0-DrB" kind="presentation" id="QKD-Qb-iKo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuv-Be-9oD">
-                                        <rect key="frame" x="0.0" y="338.5" width="414" height="69.5"/>
+                                        <rect key="frame" x="0.0" y="254" width="414" height="154"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Settings"/>
+                                        <state key="normal" title="Patient Data"/>
+                                        <connections>
+                                            <segue destination="ETe-3X-M4d" kind="presentation" id="5TB-04-IWb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -222,7 +216,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzH-al-GMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="601"/>
+            <point key="canvasLocation" x="1348" y="715"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="adQ-jb-2HX">
+            <objects>
+                <viewController id="MMQ-s0-DrB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfk-TS-1t4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WT6-1O-9EK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <keyCommands>
+                        <keyCommand/>
+                    </keyCommands>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RdP-8y-FS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="305"/>
         </scene>
         <!--Doctor LoginVC-->
         <scene sceneID="DdT-gK-jqL">
@@ -303,7 +315,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vi6-b6-7nj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="565"/>
+            <point key="canvasLocation" x="312" y="715"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o0n-DY-u2F">
+            <objects>
+                <viewController id="ETe-3X-M4d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXg-Yp-nKe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="d9t-8d-5vf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <keyCommands>
+                        <keyCommand/>
+                    </keyCommands>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myu-2m-VTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="1106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cah-y1-Zbm">
+            <objects>
+                <viewController id="Wl2-p1-YxP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eOE-0z-oKO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cZ4-9m-aaJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <keyCommands>
+                        <keyCommand/>
+                    </keyCommands>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ka-OJ-gRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-402"/>
         </scene>
     </scenes>
     <resources>
@@ -312,9 +360,6 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
