@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		3184F94C257C0823005E73B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94B257C0823005E73B8 /* Assets.xcassets */; };
 		3184F94F257C0823005E73B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94D257C0823005E73B8 /* LaunchScreen.storyboard */; };
 		31C32727257C0F26009FCEAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C32726257C0F26009FCEAB /* GoogleService-Info.plist */; };
+		774F1722257C20BE0046CC3E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F1721257C20BE0046CC3E /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3184F950257C0823005E73B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C32726257C0F26009FCEAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E6783DEC0379548956274D1 /* Pods-HackDuke_SymMom2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.debug.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.debug.xcconfig"; sourceTree = "<group>"; };
+		774F1721257C20BE0046CC3E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		92A9E4CB3DCEF1A16CEECF03 /* Pods_HackDuke_SymMom2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke_SymMom2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D64D9D39B68314811E6E47 /* Pods-HackDuke_SymMom2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.release.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				3184F942257C0821005E73B8 /* AppDelegate.swift */,
 				3184F944257C0821005E73B8 /* SceneDelegate.swift */,
 				3184F946257C0821005E73B8 /* ViewController.swift */,
+				774F1721257C20BE0046CC3E /* LoginVC.swift */,
 				3184F948257C0821005E73B8 /* Main.storyboard */,
 				3184F94B257C0823005E73B8 /* Assets.xcassets */,
 				3184F94D257C0823005E73B8 /* LaunchScreen.storyboard */,
@@ -91,7 +94,6 @@
 				3E6783DEC0379548956274D1 /* Pods-HackDuke_SymMom2.debug.xcconfig */,
 				E1D64D9D39B68314811E6E47 /* Pods-HackDuke_SymMom2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +215,7 @@
 			files = (
 				3184F947257C0821005E73B8 /* ViewController.swift in Sources */,
 				3184F943257C0821005E73B8 /* AppDelegate.swift in Sources */,
+				774F1722257C20BE0046CC3E /* LoginVC.swift in Sources */,
 				3184F945257C0821005E73B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
