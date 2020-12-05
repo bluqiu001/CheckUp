@@ -6,5 +6,6 @@ target 'HackDuke_SymMom2' do
   use_frameworks!
 
   # Pods for HackDuke_SymMom2
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 end

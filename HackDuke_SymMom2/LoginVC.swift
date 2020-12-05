@@ -21,6 +21,7 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginAction(_ sender: Any) {
+        
         print(username.text)
         print(password.text)
     }
