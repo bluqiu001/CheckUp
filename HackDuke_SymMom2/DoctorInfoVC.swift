@@ -53,9 +53,9 @@ class DoctorInfoVC: UIViewController {
             let nose_string = nose! ? "Yes" : "No"
             let taste_string = taste! ? "Yes" : "No"
             let throat_string = throat! ? "Yes" : "No"
-            let vomit_string = aches! ? "Yes" : "No"
+            let vomit_string = vomit! ? "Yes" : "No"
             
-            self.dataField.text = "Username \t" + username + "\n" + "Unusual headaches? \t" + headaches_string + "\n" + "Difficulty breathing? \t" + breath_string + "\n" + "Runny nose? \t" + nose_string + "\n" + "Sore throat? \t" + throat_string+"\n" + "Coughing? \t" + cough_string + "\nBody Aches? \t" + aches_string + "\nVomiting/Diarrhea?\t" + vomit_string + "\nChanges in taste/smell?\t" + taste_string + "\nFever (>100)?\t" + fever_string + "\nOther Concerns\t" + concerns
+            self.dataField.text = "Username \t" + username + "\n" + "Unusual headaches? \t" + headaches_string + "\n" + "Difficulty breathing? \t" + breath_string + "\n" + "Runny nose? \t" + nose_string + "\n" + "Sore throat? \t" + throat_string+"\n" + "Coughing? \t" + cough_string + "\nBody Aches? \t" + aches_string + "\nVomiting/Diarrhea?\t" + vomit_string + "\nChanges in taste/smell?\t" + taste_string + "\nFever (>100)?\t" + fever_string + "\nClose contact?\t" + contact_string + "\nOther Concerns\t" + concerns
             
             
             }) { (error) in
