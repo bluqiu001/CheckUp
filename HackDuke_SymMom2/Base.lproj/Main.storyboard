@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="id9-M1-HTf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="id9-M1-HTf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-       <!--Patient LoginVC-->
+        <!--Patient LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PatientLoginVC" customModule="HackDuke_SymMom2" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,7 +35,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0f8-xZ-sIX">
                                 <rect key="frame" x="136" y="474" width="142" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-4A-Fsc">
                                 <rect key="frame" x="188" y="538" width="38" height="30"/>
@@ -123,17 +121,28 @@
                                     <constraint firstItem="AV2-an-czX" firstAttribute="centerY" secondItem="O7s-kR-xXJ" secondAttribute="centerY" id="vfL-PI-HOf"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roq-68-cCb">
+                                <rect key="frame" x="164" y="74" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="O7s-kR-xXJ" firstAttribute="top" secondItem="ZoY-pA-dFm" secondAttribute="top" constant="200" id="6wD-zw-5ID"/>
                             <constraint firstItem="ZoY-pA-dFm" firstAttribute="bottom" secondItem="O7s-kR-xXJ" secondAttribute="bottom" constant="200" id="Xbz-zo-tp4"/>
+                            <constraint firstItem="AV2-an-czX" firstAttribute="top" secondItem="roq-68-cCb" secondAttribute="bottom" constant="105" id="kIc-Kv-E8d"/>
                             <constraint firstItem="ZoY-pA-dFm" firstAttribute="trailing" secondItem="O7s-kR-xXJ" secondAttribute="trailing" id="sTr-ed-Ogk"/>
+                            <constraint firstItem="roq-68-cCb" firstAttribute="centerX" secondItem="ZoY-pA-dFm" secondAttribute="centerX" id="t0a-Xd-Zm7"/>
                             <constraint firstItem="O7s-kR-xXJ" firstAttribute="leading" secondItem="ZoY-pA-dFm" secondAttribute="leading" id="uVB-6S-1wy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZoY-pA-dFm"/>
                     </view>
                     <navigationItem key="navigationItem" id="w9S-bB-snx"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="roq-68-cCb" id="o8m-Jh-osY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fP4-mC-sCa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,17 +217,28 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvx-4H-FuK">
+                                <rect key="frame" x="164" y="79" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="uS0-pS-BeY" firstAttribute="trailing" secondItem="Utb-gQ-cyC" secondAttribute="trailing" id="MaV-aB-Cdj"/>
                             <constraint firstItem="Utb-gQ-cyC" firstAttribute="leading" secondItem="uS0-pS-BeY" secondAttribute="leading" id="VFr-Bx-qd8"/>
+                            <constraint firstItem="nOy-KC-N1o" firstAttribute="top" secondItem="rvx-4H-FuK" secondAttribute="bottom" constant="100" id="d3R-Mz-VKB"/>
+                            <constraint firstItem="rvx-4H-FuK" firstAttribute="centerX" secondItem="uS0-pS-BeY" secondAttribute="centerX" id="sDa-Kc-2xf"/>
                             <constraint firstItem="Utb-gQ-cyC" firstAttribute="top" secondItem="uS0-pS-BeY" secondAttribute="top" constant="200" id="t8U-N2-Yhm"/>
                             <constraint firstItem="uS0-pS-BeY" firstAttribute="bottom" secondItem="Utb-gQ-cyC" secondAttribute="bottom" constant="200" id="xXm-I6-ALc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uS0-pS-BeY"/>
                     </view>
                     <navigationItem key="navigationItem" id="1uK-D2-NVn"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="rvx-4H-FuK" id="9eB-v9-PTf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzH-al-GMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,7 +287,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-aq-hyD">
                                 <rect key="frame" x="136" y="474" width="142" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-o9-8pG">
                                 <rect key="frame" x="188" y="538" width="38" height="30"/>
@@ -408,28 +428,28 @@
                                 <color key="thumbTintColor" red="0.32770802739999999" green="0.91167198179999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unusual headaches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-8r-5Dk">
-                                <rect key="frame" x="59" y="150" width="150" height="21"/>
+                                <rect key="frame" x="59" y="150" width="184" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B21-p6-wQY">
-                                <rect key="frame" x="59" y="223" width="145" height="21"/>
+                                <rect key="frame" x="59" y="223" width="176" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Runny nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-Rp-VWF">
-                                <rect key="frame" x="59" y="301" width="89" height="21"/>
+                                <rect key="frame" x="59" y="301" width="145" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sore throat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bm0-RI-HN4">
-                                <rect key="frame" x="59" y="383" width="85" height="21"/>
+                                <rect key="frame" x="59" y="383" width="145" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -443,14 +463,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body aches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TER-r2-fnw">
-                                <rect key="frame" x="61" y="562" width="89" height="21"/>
+                                <rect key="frame" x="61" y="562" width="127" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vomiting or diarrhea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNd-dL-24C">
-                                <rect key="frame" x="59" y="651" width="154" height="21"/>
+                                <rect key="frame" x="59" y="651" width="193" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

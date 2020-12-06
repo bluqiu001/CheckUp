@@ -11,17 +11,19 @@ import FirebaseAuth
 import Firebase
 class DoctorMenuVC: UIViewController {
     
-    
+    @IBOutlet weak var emailLabel: UILabel!
     let user_email = Auth.auth().currentUser?.email!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(user_email)
+        self.emailLabel.text = user_email!
         // Do any additional setup after loading the view.
     }
     
 
+    
     /*
     // MARK: - Navigation
 
