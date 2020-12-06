@@ -38,7 +38,7 @@ class PatientSymptomsVC: UIViewController {
     
     @IBOutlet weak var concerns: UITextField!
     
-    let user_email = Auth.auth().currentUser?.uid
+    let user_email = Auth.auth().currentUser?.email
     var contact_value: Bool = true
     
     
@@ -76,8 +76,9 @@ class PatientSymptomsVC: UIViewController {
     @IBAction func Submission(_ sender: Any) {
         
         let curPatientData = PatientData(addedByUser: user_email!, headaches: headaches.isOn, breath: breath.isOn, nose: nose.isOn, throat: throat.isOn, cough: coughing.isOn, aches: aches.isOn, vomit: vomitt.isOn, taste: taste.isOn, fever: fever.isOn, concerns: concerns.text!, contact: contact_value)
-        print(user_email!)
-        let ref = self.ref.child(user_email!)
+        let goodEmail = user_email!.replacingOccurrences(of: ".", with: "?")
+        
+        let ref = self.ref.child(goodEmail)
         ref.setValue(curPatientData.toAnyObject())
     }
     
