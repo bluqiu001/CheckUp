@@ -15,6 +15,7 @@
 		3184F94C257C0823005E73B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94B257C0823005E73B8 /* Assets.xcassets */; };
 		3184F94F257C0823005E73B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94D257C0823005E73B8 /* LaunchScreen.storyboard */; };
 		31C32727257C0F26009FCEAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C32726257C0F26009FCEAB /* GoogleService-Info.plist */; };
+		31D6434E257C9DF800C9A38A /* PatientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6434D257C9DF800C9A38A /* PatientData.swift */; };
 		774F1722257C20BE0046CC3E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F1721257C20BE0046CC3E /* LoginVC.swift */; };
 		774F1725257C27C70046CC3E /* PatDocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F1724257C27C70046CC3E /* PatDocVC.swift */; };
 		774F173C257C38D60046CC3E /* DoctorMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F173B257C38D60046CC3E /* DoctorMenuVC.swift */; };
@@ -38,6 +39,7 @@
 		3184F94E257C0823005E73B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3184F950257C0823005E73B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C32726257C0F26009FCEAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31D6434D257C9DF800C9A38A /* PatientData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientData.swift; sourceTree = "<group>"; };
 		3E6783DEC0379548956274D1 /* Pods-HackDuke_SymMom2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.debug.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.debug.xcconfig"; sourceTree = "<group>"; };
 		774F1721257C20BE0046CC3E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		774F1724257C27C70046CC3E /* PatDocVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatDocVC.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				3184F94D257C0823005E73B8 /* LaunchScreen.storyboard */,
 				3184F950257C0823005E73B8 /* Info.plist */,
 				774F1724257C27C70046CC3E /* PatDocVC.swift */,
+				31D6434D257C9DF800C9A38A /* PatientData.swift */,
 			);
 			path = HackDuke_SymMom2;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				7794794C257CA7F80091B40E /* SymptomsConfirmVC.swift in Sources */,
 				3184F947257C0821005E73B8 /* ViewController.swift in Sources */,
 				774F1725257C27C70046CC3E /* PatDocVC.swift in Sources */,
+				31D6434E257C9DF800C9A38A /* PatientData.swift in Sources */,
 				774F173C257C38D60046CC3E /* DoctorMenuVC.swift in Sources */,
 				3184F943257C0821005E73B8 /* AppDelegate.swift in Sources */,
 				774F1722257C20BE0046CC3E /* LoginVC.swift in Sources */,
