@@ -17,6 +17,9 @@ class DoctorLoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Auth.auth().addStateDidChangeListener() { auth, user in
+        }
     }
 
     @IBAction func regAction(_ sender: Any) {

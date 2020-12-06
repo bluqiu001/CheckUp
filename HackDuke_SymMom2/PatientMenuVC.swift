@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class PatientMenuVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let user_email = Auth.auth().currentUser?.email!
+        print(user_email)
+        
+        
         // Do any additional setup after loading the view.
     }
     
