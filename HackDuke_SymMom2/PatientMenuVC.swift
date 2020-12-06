@@ -13,19 +13,19 @@ import Foundation
 
 class PatientMenuVC: UIViewController {
     let user_email = Auth.auth().currentUser?.email!
-    
+
     let ref = Database.database().reference(withPath: "patient_appt")
-    
+
     @IBOutlet weak var recSymButton: UIButton!
-    
-    
+
+
     @IBOutlet weak var emailLabel: UILabel!
-    
-    
+
+
     @IBOutlet weak var dateLabel2: UILabel!
-    
+
     override func viewDidLoad() {
-        
+
         self.navigationItem.setHidesBackButton(true, animated: true)
         recSymButton.layer.cornerRadius = 20
 
@@ -53,9 +53,9 @@ class PatientMenuVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
 
-    
+
+
     /*
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -66,4 +66,3 @@ class PatientMenuVC: UIViewController {
     */
 
 }
-
