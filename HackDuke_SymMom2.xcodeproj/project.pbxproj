@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D79E86949FD2DFC24145539 /* Pods_HackDuke_SymMom2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9E4CB3DCEF1A16CEECF03 /* Pods_HackDuke_SymMom2.framework */; };
+		31395658257D3E170060D9D2 /* DoctorInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31395657257D3E170060D9D2 /* DoctorInfoVC.swift */; };
 		3184F943257C0821005E73B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184F942257C0821005E73B8 /* AppDelegate.swift */; };
 		3184F945257C0821005E73B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184F944257C0821005E73B8 /* SceneDelegate.swift */; };
 		3184F947257C0821005E73B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184F946257C0821005E73B8 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31395657257D3E170060D9D2 /* DoctorInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInfoVC.swift; sourceTree = "<group>"; };
 		314B1FDB257C280200217CC6 /* HackDuke_SymMom2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackDuke_SymMom2.entitlements; sourceTree = "<group>"; };
 		3184F93F257C0821005E73B8 /* HackDuke_SymMom2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDuke_SymMom2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3184F942257C0821005E73B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				774F1721257C20BE0046CC3E /* LoginVC.swift */,
 				774F1741257C3B2C0046CC3E /* PatientLoginVC.swift */,
 				3184F948257C0821005E73B8 /* Main.storyboard */,
+				31395657257D3E170060D9D2 /* DoctorInfoVC.swift */,
 				7794797E257CC8100091B40E /* NavController.swift */,
 				7794794E257CA82F0091B40E /* DScheduleConfirmVC.swift */,
 				7794794B257CA7F80091B40E /* SymptomsConfirmVC.swift */,
@@ -266,6 +269,7 @@
 				774F1745257C3B5C0046CC3E /* DoctorLoginVC.swift in Sources */,
 				774F1742257C3B2C0046CC3E /* PatientLoginVC.swift in Sources */,
 				774F173F257C38E80046CC3E /* PatientMenuVC.swift in Sources */,
+				31395658257D3E170060D9D2 /* DoctorInfoVC.swift in Sources */,
 				31CCD87D257CB092001285B7 /* PatientAppt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
