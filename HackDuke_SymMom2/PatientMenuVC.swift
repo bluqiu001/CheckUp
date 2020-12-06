@@ -10,11 +10,11 @@ import UIKit
 import FirebaseAuth
 
 class PatientMenuVC: UIViewController {
-    
+    let user_email = Auth.auth().currentUser?.email!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let user_email = Auth.auth().currentUser?.email!
+        
         print(user_email)
         
         

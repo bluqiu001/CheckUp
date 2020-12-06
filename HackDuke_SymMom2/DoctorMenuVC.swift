@@ -12,13 +12,11 @@ import Firebase
 class DoctorMenuVC: UIViewController {
     
     
-    var user: User!
+    let user_email = Auth.auth().currentUser?.email!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let user_email = Auth.auth().currentUser?.email!
         print(user_email)
         // Do any additional setup after loading the view.
     }
