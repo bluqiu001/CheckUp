@@ -14,11 +14,15 @@ class DoctorMenuVC: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     let user_email = Auth.auth().currentUser?.email!
     
+    @IBOutlet weak var SchedAppButton: UIButton!
+    @IBOutlet weak var PatDataButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(user_email)
         self.emailLabel.text = user_email!
+        SchedAppButton.layer.cornerRadius = 20
+        PatDataButton.layer.cornerRadius = 20
         self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
     }
