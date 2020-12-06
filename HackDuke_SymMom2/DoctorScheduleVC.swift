@@ -7,36 +7,24 @@
 //
 
 import UIKit
-import FirebaseDatabase
-import FirebaseAuth
-
 
 class DoctorScheduleVC: UIViewController {
 
-    @IBOutlet weak var patientEmail: UITextField!
-    @IBOutlet weak var date2: UIDatePicker!
-    
-    let ref = Database.database().reference(withPath: "patient_appt")
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func submission(_ sender: Any) {
-        let date  = self.date2.date
-        let formatter1 = DateFormatter()
-        formatter1.dateStyle = .short
 
-        let curAppt = PatientAppt(email: patientEmail.text!, date: formatter1.string(from: date))
-        let goodEmail = patientEmail.text!.replacingOccurrences(of: ".", with: "?")
-        
+    /*
+    // MARK: - Navigation
 
-        let ref = self.ref.child(goodEmail)
-        ref.setValue(curAppt.toAnyObject())
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    //    @IBAction func submission(_ sender: Any) {
-//
-//    }
+    */
 
 }
