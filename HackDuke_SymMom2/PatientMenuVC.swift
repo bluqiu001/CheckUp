@@ -16,16 +16,20 @@ class PatientMenuVC: UIViewController {
     
     let ref = Database.database().reference(withPath: "patient_appt")
     
+    @IBOutlet weak var recSymButton: UIButton!
+    
     
     @IBOutlet weak var emailLabel: UILabel!
     
     
     @IBOutlet weak var dateLabel2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        recSymButton.layer.cornerRadius = 20
 
         self.emailLabel.text = user_email!
-        self.navigationItem.setHidesBackButton(true, animated: true)
         let goodEmail = user_email!.replacingOccurrences(of: ".", with: "?")
         print(goodEmail)
         var date = ""
@@ -43,6 +47,7 @@ class PatientMenuVC: UIViewController {
     }
     
 
+    
     /*
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation

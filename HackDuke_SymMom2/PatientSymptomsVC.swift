@@ -38,13 +38,15 @@ class PatientSymptomsVC: UIViewController {
     
     @IBOutlet weak var concerns: UITextField!
     
+    @IBOutlet weak var submitButton: UIButton!
+    
     let user_email = Auth.auth().currentUser?.email
     var contact_value: Bool = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        submitButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
