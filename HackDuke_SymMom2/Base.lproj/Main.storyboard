@@ -844,6 +844,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="ndn-Vu-kO6"/>
         <segue reference="QKD-Qb-iKo"/>
         <segue reference="6Kz-TL-lPb"/>
         <segue reference="i4g-Qk-SPp"/>

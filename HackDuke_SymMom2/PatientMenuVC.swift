@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
-
+import Foundation
 
 class PatientMenuVC: UIViewController {
     let user_email = Auth.auth().currentUser?.email!
@@ -25,7 +25,7 @@ class PatientMenuVC: UIViewController {
     @IBOutlet weak var dateLabel2: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
         self.navigationItem.setHidesBackButton(true, animated: true)
         recSymButton.layer.cornerRadius = 20
 
@@ -35,14 +35,22 @@ class PatientMenuVC: UIViewController {
         var date = ""
         ref.child(goodEmail).observeSingleEvent(of: .value, with: { (snapshot) in
           // Get user value
-          print(snapshot)
-          let value = snapshot.value as? NSDictionary
-          date = value?["date"] as? String ?? ""
-          self.dateLabel2.text = "Appt Date " + date
+            print(snapshot)
+            let value = snapshot.value as? NSDictionary
+            date = value?["date"] as? String ?? ""
+            if (date == "") {
+                self.dateLabel2.text  = "No appointment on record!"
+                self.recSymButton.isHidden = true
+            }
+            else{
+                self.dateLabel2.text = "Appt Date " + date
+                self.recSymButton.isHidden = false
+
+            }
           }) { (error) in
             print(error.localizedDescription)
         }
-        
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
