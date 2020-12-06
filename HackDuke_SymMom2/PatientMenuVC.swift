@@ -15,9 +15,9 @@ class PatientMenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         print(user_email)
         self.emailLabel.text = user_email!
+        self.navigationItem.setHidesBackButton(true, animated: true)
         
         // Do any additional setup after loading the view.
     }

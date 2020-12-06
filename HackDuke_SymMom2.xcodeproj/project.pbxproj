@@ -22,6 +22,9 @@
 		774F1742257C3B2C0046CC3E /* PatientLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F1741257C3B2C0046CC3E /* PatientLoginVC.swift */; };
 		774F1745257C3B5C0046CC3E /* DoctorLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F1744257C3B5C0046CC3E /* DoctorLoginVC.swift */; };
 		77947939257C9B020091B40E /* PatientSymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77947938257C9B020091B40E /* PatientSymptomsVC.swift */; };
+		77947949257CA2770091B40E /* DoctorScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77947948257CA2770091B40E /* DoctorScheduleVC.swift */; };
+		7794794C257CA7F80091B40E /* SymptomsConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794794B257CA7F80091B40E /* SymptomsConfirmVC.swift */; };
+		7794794F257CA82F0091B40E /* DScheduleConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794794E257CA82F0091B40E /* DScheduleConfirmVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		774F1741257C3B2C0046CC3E /* PatientLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientLoginVC.swift; sourceTree = "<group>"; };
 		774F1744257C3B5C0046CC3E /* DoctorLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorLoginVC.swift; sourceTree = "<group>"; };
 		77947938257C9B020091B40E /* PatientSymptomsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSymptomsVC.swift; sourceTree = "<group>"; };
+		77947948257CA2770091B40E /* DoctorScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleVC.swift; sourceTree = "<group>"; };
+		7794794B257CA7F80091B40E /* SymptomsConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsConfirmVC.swift; sourceTree = "<group>"; };
+		7794794E257CA82F0091B40E /* DScheduleConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DScheduleConfirmVC.swift; sourceTree = "<group>"; };
 		92A9E4CB3DCEF1A16CEECF03 /* Pods_HackDuke_SymMom2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke_SymMom2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D64D9D39B68314811E6E47 /* Pods-HackDuke_SymMom2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.release.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +94,9 @@
 				774F1721257C20BE0046CC3E /* LoginVC.swift */,
 				774F1741257C3B2C0046CC3E /* PatientLoginVC.swift */,
 				3184F948257C0821005E73B8 /* Main.storyboard */,
+				7794794E257CA82F0091B40E /* DScheduleConfirmVC.swift */,
+				7794794B257CA7F80091B40E /* SymptomsConfirmVC.swift */,
+				77947948257CA2770091B40E /* DoctorScheduleVC.swift */,
 				77947938257C9B020091B40E /* PatientSymptomsVC.swift */,
 				774F1744257C3B5C0046CC3E /* DoctorLoginVC.swift */,
 				774F173B257C38D60046CC3E /* DoctorMenuVC.swift */,
@@ -234,12 +243,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				77947939257C9B020091B40E /* PatientSymptomsVC.swift in Sources */,
+				7794794C257CA7F80091B40E /* SymptomsConfirmVC.swift in Sources */,
 				3184F947257C0821005E73B8 /* ViewController.swift in Sources */,
 				774F1725257C27C70046CC3E /* PatDocVC.swift in Sources */,
 				774F173C257C38D60046CC3E /* DoctorMenuVC.swift in Sources */,
 				3184F943257C0821005E73B8 /* AppDelegate.swift in Sources */,
 				774F1722257C20BE0046CC3E /* LoginVC.swift in Sources */,
+				77947949257CA2770091B40E /* DoctorScheduleVC.swift in Sources */,
 				3184F945257C0821005E73B8 /* SceneDelegate.swift in Sources */,
+				7794794F257CA82F0091B40E /* DScheduleConfirmVC.swift in Sources */,
 				774F1745257C3B5C0046CC3E /* DoctorLoginVC.swift in Sources */,
 				774F1742257C3B2C0046CC3E /* PatientLoginVC.swift in Sources */,
 				774F173F257C38E80046CC3E /* PatientMenuVC.swift in Sources */,
