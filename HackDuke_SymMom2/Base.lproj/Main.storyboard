@@ -119,6 +119,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI3-aH-D69">
+                                <rect key="frame" x="105" y="730" width="204" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -133,6 +140,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="w9S-bB-snx"/>
                     <connections>
+                        <outlet property="dateLabel2" destination="VI3-aH-D69" id="IJb-uL-QGQ"/>
                         <outlet property="emailLabel" destination="roq-68-cCb" id="o8m-Jh-osY"/>
                     </connections>
                 </viewController>
@@ -730,7 +738,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wui-of-ddE"/>
         <segue reference="D1G-TS-mUF"/>
         <segue reference="urC-BH-mU4"/>
         <segue reference="xNq-hC-34V"/>

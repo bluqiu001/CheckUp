@@ -8,16 +8,36 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+
 
 class PatientMenuVC: UIViewController {
     let user_email = Auth.auth().currentUser?.email!
+    
+    let ref = Database.database().reference(withPath: "patient_appt")
+    
+    
     @IBOutlet weak var emailLabel: UILabel!
+    
+    
+    @IBOutlet weak var dateLabel2: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(user_email)
         self.emailLabel.text = user_email!
         self.navigationItem.setHidesBackButton(true, animated: true)
+        let goodEmail = user_email!.replacingOccurrences(of: ".", with: "?")
+        print(goodEmail)
+        var date = ""
+        ref.child(goodEmail).observeSingleEvent(of: .value, with: { (snapshot) in
+          // Get user value
+          print(snapshot)
+          let value = snapshot.value as? NSDictionary
+          date = value?["date"] as? String ?? ""
+          self.dateLabel2.text = "Appt Date " + date
+          }) { (error) in
+            print(error.localizedDescription)
+        }
         
         // Do any additional setup after loading the view.
     }
