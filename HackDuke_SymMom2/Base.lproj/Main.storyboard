@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jKL-Hh-IkQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jKL-Hh-IkQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +18,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mM7-JQ-ZZZ">
                                 <rect key="frame" x="122.5" y="322" width="169" height="47"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4W-Te-Du0">
@@ -37,7 +35,7 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-4A-Fsc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-4A-Fsc">
                                 <rect key="frame" x="185.5" y="577" width="43" height="29"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <state key="normal" title="Login"/>
@@ -45,7 +43,7 @@
                                     <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2U-VU-KVj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky8-HT-YM9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky8-HT-YM9">
                                 <rect key="frame" x="105.5" y="626" width="203" height="29"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <state key="normal" title="New user? Register here."/>
@@ -68,8 +66,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lfz-7j-9Sc" secondAttribute="trailing" symbolic="YES" id="1dZ-0B-k2o"/>
                             <constraint firstItem="j50-Np-Rd1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ewn-Cg-OYB"/>
@@ -88,6 +85,7 @@
                             <constraint firstItem="j50-Np-Rd1" firstAttribute="leading" secondItem="b4W-Te-Du0" secondAttribute="leading" id="urF-Aa-TFC"/>
                             <constraint firstItem="mM7-JQ-ZZZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="234" id="xBt-P1-iKc"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="6AV-v5-g5B"/>
                     <connections>
@@ -111,9 +109,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="O7s-kR-xXJ">
                                 <rect key="frame" x="10" y="321" width="394" height="200"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AV2-an-czX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AV2-an-czX">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="200"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
                                         <state key="normal" title="Record Symptoms">
                                             <color key="titleColor" red="0.038498406529059351" green="0.042460536551505404" blue="0.65438610406091369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -130,7 +128,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fax-wr-u2x">
                                 <rect key="frame" x="122.5" y="50" width="169" height="47"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roq-68-cCb">
@@ -146,8 +144,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ZoY-pA-dFm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZoY-pA-dFm" firstAttribute="trailing" secondItem="O7s-kR-xXJ" secondAttribute="trailing" constant="10" id="3T4-Kf-J1j"/>
                             <constraint firstItem="fax-wr-u2x" firstAttribute="top" secondItem="ZoY-pA-dFm" secondAttribute="top" constant="50" id="7KU-tC-fui"/>
@@ -160,6 +157,7 @@
                             <constraint firstItem="roq-68-cCb" firstAttribute="top" secondItem="fax-wr-u2x" secondAttribute="bottom" constant="50" id="yCz-XA-6v8"/>
                             <constraint firstItem="VI3-aH-D69" firstAttribute="centerX" secondItem="9Lq-7D-Sgf" secondAttribute="centerX" id="z4o-GE-qcw"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZoY-pA-dFm"/>
                     </view>
                     <navigationItem key="navigationItem" id="w9S-bB-snx"/>
                     <connections>
@@ -186,7 +184,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6po-rx-bic">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6po-rx-bic">
                                 <rect key="frame" x="173" y="494" width="68" height="31"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <state key="normal" title="Patient"/>
@@ -197,10 +195,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFR-4Y-eIn">
                                 <rect key="frame" x="122.5" y="288" width="169" height="47"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c7-yu-84u">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c7-yu-84u">
                                 <rect key="frame" x="178" y="565" width="58" height="31"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <state key="normal" title="Doctor"/>
@@ -209,8 +207,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Xca-3S-Wct"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6c7-yu-84u" firstAttribute="top" secondItem="6po-rx-bic" secondAttribute="bottom" constant="40" id="3jR-IC-ETO"/>
                             <constraint firstItem="FAp-CY-MID" firstAttribute="top" secondItem="uFR-4Y-eIn" secondAttribute="bottom" constant="80" id="4Ms-uz-dqM"/>
@@ -221,6 +218,7 @@
                             <constraint firstItem="uFR-4Y-eIn" firstAttribute="top" secondItem="Xca-3S-Wct" secondAttribute="top" constant="200" id="wcf-v0-wwU"/>
                             <constraint firstItem="uFR-4Y-eIn" firstAttribute="centerX" secondItem="Wey-iT-AtK" secondAttribute="centerX" id="x0J-Nc-cvL"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xca-3S-Wct"/>
                     </view>
                     <navigationItem key="navigationItem" id="IQh-n1-1hA"/>
                 </viewController>
@@ -239,9 +237,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Utb-gQ-cyC">
                                 <rect key="frame" x="10" y="250.5" width="394" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOy-KC-N1o">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOy-KC-N1o">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="150"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
                                         <state key="normal" title="Schedule Appointment">
                                             <color key="titleColor" red="0.038498406530000001" green="0.042460536549999997" blue="0.65438610409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -250,7 +248,7 @@
                                             <segue destination="MMQ-s0-DrB" kind="show" id="QKD-Qb-iKo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuv-Be-9oD">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuv-Be-9oD">
                                         <rect key="frame" x="0.0" y="250" width="394" height="150"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
@@ -269,7 +267,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdN-eP-Tii">
                                 <rect key="frame" x="122.5" y="50" width="169" height="47"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnV-Ag-eTr">
@@ -279,8 +277,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="uS0-pS-BeY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="QdN-eP-Tii" firstAttribute="top" secondItem="uS0-pS-BeY" secondAttribute="top" constant="50" id="2LL-N2-mu1"/>
                             <constraint firstItem="QdN-eP-Tii" firstAttribute="centerX" secondItem="A67-8k-R5B" secondAttribute="centerX" id="7en-VM-XKt"/>
@@ -290,6 +287,7 @@
                             <constraint firstItem="ZnV-Ag-eTr" firstAttribute="top" secondItem="QdN-eP-Tii" secondAttribute="bottom" constant="50" id="oOT-YG-BQa"/>
                             <constraint firstItem="Utb-gQ-cyC" firstAttribute="centerX" secondItem="A67-8k-R5B" secondAttribute="centerX" id="zHL-OE-AQP"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="uS0-pS-BeY"/>
                     </view>
                     <navigationItem key="navigationItem" id="1uK-D2-NVn"/>
                     <connections>
@@ -330,21 +328,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="HYy-do-hou">
-                                <rect key="frame" x="148" y="420.5" width="118" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="e45-7N-9FX"/>
-                                    <constraint firstAttribute="width" constant="118" id="yZh-OO-Hh9"/>
-                                </constraints>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule Appointment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-mP-Sss">
                                 <rect key="frame" x="26" y="64" width="362" height="35"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8df-pB-d8p">
-                                <rect key="frame" x="178" y="560.5" width="58" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8df-pB-d8p">
+                                <rect key="frame" x="178" y="736.5" width="58" height="31"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
@@ -352,9 +343,11 @@
                                     <segue destination="dX1-P5-eVX" kind="show" id="Wui-of-ddE"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="HYy-do-hou">
+                                <rect key="frame" x="66" y="410" width="260" height="40"/>
+                            </datePicker>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="WT6-1O-9EK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="1oO-mP-Sss" firstAttribute="centerX" secondItem="sfk-TS-1t4" secondAttribute="centerX" id="0dx-Nu-P1G"/>
                             <constraint firstItem="8df-pB-d8p" firstAttribute="centerX" secondItem="sfk-TS-1t4" secondAttribute="centerX" id="9uU-PY-40u"/>
@@ -363,12 +356,13 @@
                             <constraint firstItem="qDJ-PK-fYd" firstAttribute="centerX" secondItem="sfk-TS-1t4" secondAttribute="centerX" id="X3o-Ea-Jxf"/>
                             <constraint firstItem="mI6-H9-U8s" firstAttribute="top" secondItem="qDJ-PK-fYd" secondAttribute="bottom" constant="72" id="gM3-6p-v0N"/>
                             <constraint firstItem="1oO-mP-Sss" firstAttribute="top" secondItem="WT6-1O-9EK" secondAttribute="top" constant="64" id="gv6-eO-mMK"/>
-                            <constraint firstItem="HYy-do-hou" firstAttribute="centerX" secondItem="sfk-TS-1t4" secondAttribute="centerX" id="s0a-hj-1ig"/>
                             <constraint firstItem="4CS-OX-HFh" firstAttribute="centerX" secondItem="sfk-TS-1t4" secondAttribute="centerX" id="skS-Ru-PaY"/>
                             <constraint firstItem="4CS-OX-HFh" firstAttribute="top" secondItem="1oO-mP-Sss" secondAttribute="bottom" constant="88" id="uVO-s1-DxR"/>
                             <constraint firstItem="HYy-do-hou" firstAttribute="top" secondItem="mI6-H9-U8s" secondAttribute="bottom" constant="60" id="vd6-3B-sgV"/>
+                            <constraint firstItem="HYy-do-hou" firstAttribute="centerX" secondItem="WT6-1O-9EK" secondAttribute="centerX" id="wvF-TH-CCR"/>
                             <constraint firstItem="qDJ-PK-fYd" firstAttribute="top" secondItem="4CS-OX-HFh" secondAttribute="bottom" constant="32" id="xO0-EM-AyX"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="WT6-1O-9EK"/>
                     </view>
                     <navigationItem key="navigationItem" id="0fc-F1-WW3"/>
                     <connections>
@@ -396,7 +390,7 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0G-MJ-ccr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0G-MJ-ccr">
                                 <rect key="frame" x="179.5" y="301.5" width="55" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="2Sp-6h-tfN"/>
@@ -410,7 +404,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Patient Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B5-i4-VbL">
                                 <rect key="frame" x="77" y="100" width="260.5" height="42"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="36"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter patient email:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-tN-1iZ">
@@ -649,8 +643,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="d9t-8d-5vf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="fVa-s9-nZC" firstAttribute="leading" secondItem="gXg-Yp-nKe" secondAttribute="leading" constant="233.5" id="4j6-ZT-qhf"/>
                             <constraint firstItem="dad-2z-J6R" firstAttribute="top" secondItem="s0G-MJ-ccr" secondAttribute="bottom" constant="24" id="4zI-wm-hOI"/>
@@ -667,6 +660,7 @@
                             <constraint firstItem="fVa-s9-nZC" firstAttribute="top" secondItem="dad-2z-J6R" secondAttribute="top" id="g20-3m-fDa"/>
                             <constraint firstItem="fVa-s9-nZC" firstAttribute="leading" secondItem="dad-2z-J6R" secondAttribute="trailing" constant="8" id="tJi-hN-lgv"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="d9t-8d-5vf"/>
                     </view>
                     <navigationItem key="navigationItem" id="BjN-PK-gfm"/>
                     <connections>
@@ -704,12 +698,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QoC-X0-ldj">
                                         <rect key="frame" x="0.0" y="0.0" width="409" height="1100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJs-7K-JzL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJs-7K-JzL">
                                                 <rect key="frame" x="40" y="905.5" width="329" height="31"/>
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                                 <state key="normal" title="Submit">
-                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="Submission:" destination="Wl2-p1-YxP" eventType="touchUpInside" id="L8C-Yt-gaE"/>
@@ -731,47 +725,47 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bR3-PZ-PEj">
                                                 <rect key="frame" x="320" y="211.5" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mql-f0-eWn">
                                                 <rect key="frame" x="320" y="260" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xYH-n2-ggV">
                                                 <rect key="frame" x="320" y="308.5" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-Nz-fFr">
                                                 <rect key="frame" x="320" y="357" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oIP-pS-m14">
                                                 <rect key="frame" x="320" y="405.5" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dfd-5o-vZe">
                                                 <rect key="frame" x="320" y="454" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nEd-8b-lKK">
                                                 <rect key="frame" x="320" y="502.5" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rsz-xf-VjS">
                                                 <rect key="frame" x="320" y="551" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t9u-XM-LHU">
                                                 <rect key="frame" x="320" y="599.5" width="51" height="31"/>
                                                 <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                                <color key="thumbTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unusual headaches" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ru-Rk-A6M">
                                                 <rect key="frame" x="40" y="218.5" width="143.5" height="16.5"/>
@@ -843,7 +837,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptom Monitoring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3X-lz-4Ld">
                                                 <rect key="frame" x="31" y="84" width="347" height="38"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="32"/>
-                                                <color key="textColor" systemColor="systemBlueColor"/>
+                                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXO-Ul-LWq">
@@ -930,8 +924,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="cZ4-9m-aaJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="QoC-X0-ldj" firstAttribute="width" secondItem="eOE-0z-oKO" secondAttribute="width" multiplier="0.987923" id="BuS-GY-BBL"/>
                             <constraint firstAttribute="bottom" secondItem="FDy-fw-hnN" secondAttribute="bottom" id="R8o-H0-Oq0"/>
@@ -939,6 +932,7 @@
                             <constraint firstItem="FDy-fw-hnN" firstAttribute="top" secondItem="cZ4-9m-aaJ" secondAttribute="top" id="V5O-DF-zXq"/>
                             <constraint firstItem="FDy-fw-hnN" firstAttribute="trailing" secondItem="cZ4-9m-aaJ" secondAttribute="trailing" id="vYq-TX-xIr"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="cZ4-9m-aaJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="pdk-Zd-lRE"/>
                     <size key="freeformSize" width="414" height="1100"/>
@@ -975,7 +969,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-Lb-tjL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-Lb-tjL">
                                 <rect key="frame" x="179.5" y="490" width="55" height="30"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                 <state key="normal" title="Return"/>
@@ -984,14 +978,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="JVQ-8C-iMU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="07i-pC-vuS" firstAttribute="centerY" secondItem="R47-pF-sJa" secondAttribute="centerY" id="BUD-wU-C0Z"/>
                             <constraint firstItem="Mu1-Lb-tjL" firstAttribute="top" secondItem="07i-pC-vuS" secondAttribute="bottom" constant="60" id="O6w-xm-hH7"/>
                             <constraint firstItem="Mu1-Lb-tjL" firstAttribute="centerX" secondItem="R47-pF-sJa" secondAttribute="centerX" id="ael-PO-mxb"/>
                             <constraint firstItem="07i-pC-vuS" firstAttribute="centerX" secondItem="R47-pF-sJa" secondAttribute="centerX" id="q6G-Cv-ReL"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="JVQ-8C-iMU"/>
                     </view>
                     <navigationItem key="navigationItem" id="3OZ-5N-DTe"/>
                 </viewController>
@@ -1013,7 +1007,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gha-os-fH8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gha-os-fH8">
                                 <rect key="frame" x="98.5" y="450" width="217" height="30"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                 <state key="normal" title="Schedule another session"/>
@@ -1021,7 +1015,7 @@
                                     <segue destination="MMQ-s0-DrB" kind="show" id="D1G-TS-mUF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4e-dQ-yN1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4e-dQ-yN1">
                                 <rect key="frame" x="179.5" y="520" width="55" height="30"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                 <state key="normal" title="Return"/>
@@ -1030,8 +1024,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="B9p-vC-GmB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Gha-os-fH8" firstAttribute="centerX" secondItem="DuT-Xz-CNc" secondAttribute="centerX" id="3pc-ot-D0b"/>
                             <constraint firstItem="MD8-Tn-ECQ" firstAttribute="centerX" secondItem="DuT-Xz-CNc" secondAttribute="centerX" id="DHV-bN-HaX"/>
@@ -1040,6 +1033,7 @@
                             <constraint firstItem="Gha-os-fH8" firstAttribute="top" secondItem="MD8-Tn-ECQ" secondAttribute="bottom" constant="72" id="dWC-nl-vds"/>
                             <constraint firstItem="MD8-Tn-ECQ" firstAttribute="top" secondItem="B9p-vC-GmB" secondAttribute="top" constant="360" id="sTq-n2-Sj2"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="B9p-vC-GmB"/>
                     </view>
                     <navigationItem key="navigationItem" id="9x9-7M-Ps0"/>
                 </viewController>
@@ -1076,7 +1070,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toa-Gm-N8p">
                                 <rect key="frame" x="122.5" y="322" width="169" height="47"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-aa-o58">
@@ -1093,7 +1087,7 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYA-yP-4dh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYA-yP-4dh">
                                 <rect key="frame" x="185.5" y="577" width="43" height="29"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <state key="normal" title="Login"/>
@@ -1101,7 +1095,7 @@
                                     <action selector="loginAction:" destination="g5P-NK-Yre" eventType="touchUpInside" id="Ozd-x5-9QL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amY-Al-07M">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amY-Al-07M">
                                 <rect key="frame" x="105.5" y="626" width="203" height="29"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <state key="normal" title="New user? Register here."/>
@@ -1124,8 +1118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="9L6-UT-GBT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="TBb-IO-8eK" firstAttribute="top" secondItem="UC0-M9-Egs" secondAttribute="bottom" constant="8" id="0hs-aW-c8K"/>
                             <constraint firstItem="Toa-Gm-N8p" firstAttribute="centerX" secondItem="Erk-oP-OXf" secondAttribute="centerX" id="25k-qU-9PH"/>
@@ -1144,6 +1137,7 @@
                             <constraint firstItem="eA6-da-JTg" firstAttribute="leading" secondItem="w4h-aa-o58" secondAttribute="leading" id="wkc-Rw-MaA"/>
                             <constraint firstItem="eA6-da-JTg" firstAttribute="top" secondItem="w4h-aa-o58" secondAttribute="bottom" constant="8" id="yhe-ja-m7b"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="9L6-UT-GBT"/>
                     </view>
                     <navigationItem key="navigationItem" id="x3V-ed-7vk"/>
                     <connections>
@@ -1158,22 +1152,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Wui-of-ddE"/>
         <segue reference="D1G-TS-mUF"/>
         <segue reference="urC-BH-mU4"/>
         <segue reference="i4g-Qk-SPp"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
