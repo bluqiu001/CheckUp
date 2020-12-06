@@ -15,6 +15,7 @@
 		3184F94C257C0823005E73B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94B257C0823005E73B8 /* Assets.xcassets */; };
 		3184F94F257C0823005E73B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3184F94D257C0823005E73B8 /* LaunchScreen.storyboard */; };
 		31C32727257C0F26009FCEAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C32726257C0F26009FCEAB /* GoogleService-Info.plist */; };
+		31CCD87D257CB092001285B7 /* PatientAppt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCD87C257CB092001285B7 /* PatientAppt.swift */; };
 		31D6434E257C9DF800C9A38A /* PatientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6434D257C9DF800C9A38A /* PatientData.swift */; };
 		774F1722257C20BE0046CC3E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F1721257C20BE0046CC3E /* LoginVC.swift */; };
 		774F1725257C27C70046CC3E /* PatDocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F1724257C27C70046CC3E /* PatDocVC.swift */; };
@@ -26,6 +27,7 @@
 		77947949257CA2770091B40E /* DoctorScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77947948257CA2770091B40E /* DoctorScheduleVC.swift */; };
 		7794794C257CA7F80091B40E /* SymptomsConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794794B257CA7F80091B40E /* SymptomsConfirmVC.swift */; };
 		7794794F257CA82F0091B40E /* DScheduleConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794794E257CA82F0091B40E /* DScheduleConfirmVC.swift */; };
+		7794797F257CC8100091B40E /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794797E257CC8100091B40E /* NavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		3184F94E257C0823005E73B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3184F950257C0823005E73B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C32726257C0F26009FCEAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31CCD87C257CB092001285B7 /* PatientAppt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAppt.swift; sourceTree = "<group>"; };
 		31D6434D257C9DF800C9A38A /* PatientData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientData.swift; sourceTree = "<group>"; };
 		3E6783DEC0379548956274D1 /* Pods-HackDuke_SymMom2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.debug.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.debug.xcconfig"; sourceTree = "<group>"; };
 		774F1721257C20BE0046CC3E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		77947948257CA2770091B40E /* DoctorScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleVC.swift; sourceTree = "<group>"; };
 		7794794B257CA7F80091B40E /* SymptomsConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsConfirmVC.swift; sourceTree = "<group>"; };
 		7794794E257CA82F0091B40E /* DScheduleConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DScheduleConfirmVC.swift; sourceTree = "<group>"; };
+		7794797E257CC8100091B40E /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		92A9E4CB3DCEF1A16CEECF03 /* Pods_HackDuke_SymMom2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke_SymMom2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D64D9D39B68314811E6E47 /* Pods-HackDuke_SymMom2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke_SymMom2.release.xcconfig"; path = "Target Support Files/Pods-HackDuke_SymMom2/Pods-HackDuke_SymMom2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,7 @@
 				774F1721257C20BE0046CC3E /* LoginVC.swift */,
 				774F1741257C3B2C0046CC3E /* PatientLoginVC.swift */,
 				3184F948257C0821005E73B8 /* Main.storyboard */,
+				7794797E257CC8100091B40E /* NavController.swift */,
 				7794794E257CA82F0091B40E /* DScheduleConfirmVC.swift */,
 				7794794B257CA7F80091B40E /* SymptomsConfirmVC.swift */,
 				77947948257CA2770091B40E /* DoctorScheduleVC.swift */,
@@ -108,6 +113,7 @@
 				3184F950257C0823005E73B8 /* Info.plist */,
 				774F1724257C27C70046CC3E /* PatDocVC.swift */,
 				31D6434D257C9DF800C9A38A /* PatientData.swift */,
+				31CCD87C257CB092001285B7 /* PatientAppt.swift */,
 			);
 			path = HackDuke_SymMom2;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				31D6434E257C9DF800C9A38A /* PatientData.swift in Sources */,
 				774F173C257C38D60046CC3E /* DoctorMenuVC.swift in Sources */,
 				3184F943257C0821005E73B8 /* AppDelegate.swift in Sources */,
+				7794797F257CC8100091B40E /* NavController.swift in Sources */,
 				774F1722257C20BE0046CC3E /* LoginVC.swift in Sources */,
 				77947949257CA2770091B40E /* DoctorScheduleVC.swift in Sources */,
 				3184F945257C0821005E73B8 /* SceneDelegate.swift in Sources */,
@@ -259,6 +266,7 @@
 				774F1745257C3B5C0046CC3E /* DoctorLoginVC.swift in Sources */,
 				774F1742257C3B2C0046CC3E /* PatientLoginVC.swift in Sources */,
 				774F173F257C38E80046CC3E /* PatientMenuVC.swift in Sources */,
+				31CCD87D257CB092001285B7 /* PatientAppt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
