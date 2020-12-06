@@ -13,12 +13,27 @@ import FirebaseDatabase
 class DoctorInfoVC: UIViewController {
     
     let ref = Database.database().reference(withPath: "patient_data")
-    
+
     @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var dataField: UILabel!
+    
+    @IBOutlet weak var usernameAns: UILabel!
+    @IBOutlet weak var headachesAns: UILabel!
+    @IBOutlet weak var breathAns: UILabel!
+    @IBOutlet weak var noseAns: UILabel!
+    @IBOutlet weak var throatAns: UILabel!
+    @IBOutlet weak var coughAns: UILabel!
+    @IBOutlet weak var achesAns: UILabel!
+    @IBOutlet weak var vomitAns: UILabel!
+    @IBOutlet weak var tasteAns: UILabel!
+    @IBOutlet weak var feverAns: UILabel!
+    @IBOutlet weak var contactAns: UILabel!
+    @IBOutlet weak var concernsAns: UILabel!
+    
+    @IBOutlet weak var leftStackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.leftStackView.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +44,7 @@ class DoctorInfoVC: UIViewController {
         ref.child(goodEmail).observeSingleEvent(of: .value, with: { (snapshot) in
           // Get user value
             print(snapshot)
+            self.leftStackView.isHidden = false
             let value = snapshot.value as? NSDictionary
             
             let aches = value?["aches"] as? Bool
@@ -55,8 +71,18 @@ class DoctorInfoVC: UIViewController {
             let throat_string = throat! ? "Yes" : "No"
             let vomit_string = vomit! ? "Yes" : "No"
             
-            self.dataField.text = "Username \t" + username + "\n" + "Unusual headaches? \t" + headaches_string + "\n" + "Difficulty breathing? \t" + breath_string + "\n" + "Runny nose? \t" + nose_string + "\n" + "Sore throat? \t" + throat_string+"\n" + "Coughing? \t" + cough_string + "\nBody Aches? \t" + aches_string + "\nVomiting/Diarrhea?\t" + vomit_string + "\nChanges in taste/smell?\t" + taste_string + "\nFever (>100)?\t" + fever_string + "\nClose contact?\t" + contact_string + "\nOther Concerns\t" + concerns
-            
+            self.achesAns.text = aches_string
+            self.breathAns.text = breath_string
+            self.contactAns.text = contact_string
+            self.coughAns.text = cough_string
+            self.feverAns.text = fever_string
+            self.headachesAns.text = headaches_string
+            self.noseAns.text = nose_string
+            self.tasteAns.text = taste_string
+            self.throatAns.text = throat_string
+            self.vomitAns.text = vomit_string
+            self.usernameAns.text = username
+            self.concernsAns.text = concerns
             
             }) { (error) in
             print(error.localizedDescription)
